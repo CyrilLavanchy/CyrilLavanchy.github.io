@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
 	font-size: 14px;
 	font-family: 'Noto Serif JP', sans-serif;
@@ -30,3 +31,37 @@ body {
 	padding: 0 20px 20px 20px;
 	border: 5px solid black;
 }
+=======
+html {
+	font-size: 14px;
+	font-family: 'Noto Serif JP', sans-serif;
+	background-color: #054D9D;
+}
+h1 {
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;    
+	color: #054D9D;
+	text-shadow: 3px 3px 3px black;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+p, li {
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+li:hover {
+	color: #013369;
+}
+body {
+	width: 600px
+	margin: 0 auto;
+	background-color: #ff5d5d;
+	padding: 0 20px 20px 20px;
+	border: 5px solid black;
+}
+>>>>>>> MastaC
