@@ -28,16 +28,18 @@
 		<h2>1. Übersicht</h2>
 		<h2>2. Football in Kürze</h2>
 		<h2>3. Erste Visualisierung</h2>
-			<p>Verhältnis von Lauf- zu Passspielzügen in den Jahren 2009-2017 pro Viertel</p>
-			<button id="showChart">Chart anzeigen</button>
-			<div id='chartModal' class='modal'>
-					<div class="modal-content">
-						<span class="close">&times;</span>
-						<div class='chart-container' style="position: relative; height:45vw; width:80vw">
-							<canvas id="FirstChart"></canvas>
+			<div>
+				<p>Verhältnis von Lauf- zu Passspielzügen in den Jahren 2009-2017 pro Viertel</p>
+				<button id="showChart">Chart anzeigen</button>
+					<div id='chartModal' class='modal'>
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<div class='chart-container'>
+								<canvas id="FirstChart"></canvas>
+							</div>
 						</div>
 					</div>
-			</div>
+				</div>
 		<button id="changeUser">Benutzer ändern</button>
 		<script>
 		 d3.select("#contentlist").selectAll("li")
