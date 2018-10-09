@@ -27,14 +27,14 @@ body {
 	margin: 0 auto;
 	background-color: #fffbfb;
 	padding: 0 20px 20px 20px;
-	border: 5px solid black;
+	border: 1px solid black;
+	border-bottom: 1.5px solid black;
 }
 .modal {
 	display: none;
 	position: fixed;
 	z-index: 1;
-	left: 0;
-	top: 0;
+	margin: auto;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
