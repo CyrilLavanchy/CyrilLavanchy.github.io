@@ -9,7 +9,7 @@ myImage.onclick = function () {
 	}
 }
 
-var myButton = document.querySelector('button');
+var UserChangeBtn = document.getElementById('changeUser');
 var myHeading = document.querySelector('h1');
 
 function setUserName() {
@@ -25,17 +25,17 @@ if(!localStorage.getItem('name')) {
 	myHeading.textContent = 'Willkommen zu NFL Analytics, ' + storedName;
 }
 
-myButton.onclick = function() {
+UserChangeBtn.onclick = function() {
 	setUserName();
 }
 // Get the modal
 var modal = document.getElementById('chartModal');
 // Get the button that opens the Modal
-var btn = document.getElementById("show chart");
+var showChartBtn = document.getElementById("show chart");
 // Get the <span> element that closes the Modal
 var span = document.getElementByClassName('close')[0];
 //When the user clicks on the button, open the Modal
-btn.onclick = function() {
+showChartBtn.onclick = function() {
 	modal.style.display = "none";
 }
 //When the user clicks anywhere outside of the modal, close it
