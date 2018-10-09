@@ -33,13 +33,13 @@ var modal = document.getElementById('chartModal');
 // Get the button that opens the Modal
 var showChartBtn = document.getElementById("showChart");
 // Get the <span> element that closes the Modal
-var span = document.getElementsByClassName('close')[0];
+var closeaction = document.getElementsByClassName('close')[0];
 //When the user clicks on the button, open the Modal
 showChartBtn.onclick = function() {
 	modal.style.display = "block";
 }
 //When the user clicks on <span> (x), close the Modal
-span.onclick = function() {
+closeaction.onclick = function() {
 	modal.style.display = "none";
 }
 //When the user clicks anywhere outside of the modal, close it
