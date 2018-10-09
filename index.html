@@ -30,7 +30,8 @@
 			.data(["Übersicht", "Football in Kürze", "Erste Visualisierung"])
 			.text(function(d) { return d; })
 			.enter()
-			.append("li");
+			.append("li")
+			.text(function(d) { return d; });
 		</script>
 		<script src="scripts/main.js"></script>
 	</body>
