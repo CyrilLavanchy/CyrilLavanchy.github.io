@@ -28,6 +28,7 @@
 		<h2>1. Übersicht</h2>
 		<h2>2. Football in Kürze</h2>
 		<h2>3. Erste Visualisierung</h2>
+			<canvas id="FirstChart" width="300" height="300"></canvas>
 		<button>Benutzer ändern</button>
 		<script>
 		 d3.select("#contentlist").selectAll("li")
@@ -37,7 +38,6 @@
 			.append("li")
 			.text(function(d) { return d; });
 		</script>
-		<canvas id="FirstChart" width="300" height="300"></canvas>
 		<script>
 		var ctx = document.getElementById("FirstChart");
 		var FirstChart = new Chart(ctx, {
