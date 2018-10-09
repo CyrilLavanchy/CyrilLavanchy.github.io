@@ -1,7 +1,6 @@
 html {
 	font-size: 14px;
 	font-family: 'Noto Serif JP', sans-serif;
-	background-color: #2978cf;
 }
 h1 {
 	font-size: 60px;
@@ -26,7 +25,7 @@ li:hover {
 body {
 	width: 600px
 	margin: 0 auto;
-	background-color: #ffacac;
+	background-color: #fffbfb;
 	padding: 0 20px 20px 20px;
 	border: 5px solid black;
 }
