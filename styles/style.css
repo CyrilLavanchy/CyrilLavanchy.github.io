@@ -7,7 +7,7 @@ h1 {
 	font-size: 60px;
 	text-align: center;
 	margin: 0;
-	padding: 20px 0;    
+	padding: 20px 0;
 	color: #054D9D;
 	text-shadow: 3px 3px 3px black;
 }
@@ -26,7 +26,6 @@ li:hover {
 body {
 	width: 600px
 	margin: 0 auto;
-	background-color: #ff5d5d;
 	padding: 0 20px 20px 20px;
 	border: 5px solid black;
 }
