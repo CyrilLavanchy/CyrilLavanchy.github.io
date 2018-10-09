@@ -27,7 +27,11 @@
 			<li><a href="https://www.nfl.com" title="NFL Homepage" target="_blank">NFL</a></li>
 		</ul>
 		<button>Benutzer ändern</button>
-		<script> d3.select("#contentlist").selectAll("li").data([Übersicht, Football in Kürze, Erste Visualisierung]); </script>
+		<script>
+		 d3.select("#contentlist").selectAll("li")
+			.data([Übersicht, Football in Kürze, Erste Visualisierung])
+			.text(function(d) { return d; }); 
+		</script>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
