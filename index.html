@@ -28,8 +28,14 @@
 		<h2>1. Übersicht</h2>
 		<h2>2. Football in Kürze</h2>
 		<h2>3. Erste Visualisierung</h2>
-			<div class='chart-container' style='position: relative; height: 40vh; width:80vw'>
-				<canvas id="FirstChart"></canvas>
+			<button id="show chart">Open Modal</button>
+			<div id="chartModal" class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<div class='chart-container' style='position: relative; height: 40vh; width:80vw'>
+							<canvas id="FirstChart"></canvas>
+						</div>
+					</div>
 			</div>
 		<button>Benutzer ändern</button>
 		<script>

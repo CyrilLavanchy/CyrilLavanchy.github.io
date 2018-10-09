@@ -28,3 +28,19 @@ if(!localStorage.getItem('name')) {
 myButton.onclick = function() {
 	setUserName();
 }
+// Get the modal
+var modal = document.getElementById('chartModal');
+// Get the button that opens the Modal
+var btn = document.getElementById("show chart");
+// Get the <span> element that closes the Modal
+var span = document.getElementByClassName('close')[0];
+//When the user clicks on the button, open the Modal
+btn.onclick = function() {
+	modal.style.display = "none";
+}
+//When the user clicks anywhere outside of the modal, close it
+window.onclick= function(event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
