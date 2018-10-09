@@ -11,6 +11,7 @@
 		<link href="styles/style.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
 		<script src = "d3.min.js"></script>
+		<script src="Chart.min.js"></script>
 	</head>
 	<body>
 		<h1>NFL Analytics</h1>
@@ -24,6 +25,7 @@
 		<ul id = "links">
 			<li><a href="https://www.nfl.com" title="NFL Homepage" target="_blank">NFL</a></li>
 		</ul>
+		<h2>Übersicht
 		<button>Benutzer ändern</button>
 		<script>
 		 d3.select("#contentlist").selectAll("li")
@@ -32,6 +34,14 @@
 			.enter()
 			.append("li")
 			.text(function(d) { return d; });
+		</script>
+		<canvas id="FirstChart" width="400" height="400"></canvas>
+		<script>
+		var myBarChart = new Chart(ctx, {
+    	type: 'bar',
+    	data: [52.35,47.65,60.46,39.54,54.46,45.54,59.34,40.66,52.86,47.14],
+    	label: "Run/Pass über 2009-2017 pro Viertel"
+		});
 		</script>
 		<script src="scripts/main.js"></script>
 	</body>
