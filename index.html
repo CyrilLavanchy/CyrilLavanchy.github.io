@@ -37,10 +37,10 @@
 		</script>
 		<canvas id="FirstChart" width="400" height="400"></canvas>
 		<script>
+		var ctx = document.getElementById("FirstChart");
 		var FirstChart = new Chart(ctx, {
     	type: 'bar',
     	data: [52.35,47.65,60.46,39.54,54.46,45.54,59.34,40.66,52.86,47.14],
-    	label: "Run/Pass über 2009-2017 pro Viertel"
 		});
 		</script>
 		<script src="scripts/main.js"></script>
