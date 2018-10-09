@@ -19,8 +19,6 @@
 		<h2>Inhaltsübersicht:</h2>
 		<ol id = "contentlist">
 			<li></li>
-			<li></li>
-			<li></li>
 		</ol>
 		<h2>Links:</h2>
 		<ul id = "links">
@@ -30,7 +28,9 @@
 		<script>
 		 d3.select("#contentlist").selectAll("li")
 			.data(["Übersicht", "Football in Kürze", "Erste Visualisierung"])
-			.text(function(d) { return d; });
+			.text(function(d) { return d; })
+			.enter()
+			.append("li");
 		</script>
 		<script src="scripts/main.js"></script>
 	</body>
