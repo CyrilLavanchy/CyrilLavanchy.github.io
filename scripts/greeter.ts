@@ -1,4 +1,4 @@
-function greeter(person) {
+function greeter(person: string) {
   return "Herzlich Willkommen auf NFL Analytics, " + person;
 }
 
