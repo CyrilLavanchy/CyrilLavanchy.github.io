@@ -1,3 +1,5 @@
+var myHeading = document.querySelector('h1');
+
 class User {
   fullName: string;
   constructor(public firstName: string, public middleInitial: string, public lastName: string) {
@@ -15,5 +17,3 @@ function greeter(person: Person) {
 }
 
 let user = new User("Cyril", "D.", "Lavanchy");
-
-document.body.innerHTML = greeter(user);
