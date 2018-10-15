@@ -1,7 +1,19 @@
-function greeter(person: string) {
-  return "Herzlich Willkommen auf NFL Analytics, " + person;
+class User {
+  fullName: string;
+  constructor(public firstName: string, public middleInitial: string, public lastName: string) {
+    this.fullName = firstName + "" + middleInitial + "" + lastName;
+  }
 }
 
-let user = "Cyril Lavanchy";
+interface Person {
+  firstName: string;
+  lastName: string;
+}
+
+function greeter(person: Person) {
+  return "Herzlich Willkommen auf NFL Analytics, " + person.firstName + "" + person.lastName;
+}
+
+let user = new User("Cyril", "D.", "Lavanchy");
 
 document.body.innerHTML = greeter(user);
