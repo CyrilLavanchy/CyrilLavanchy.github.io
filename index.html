@@ -1,3 +1,4 @@
+<<<<<<< current
 <!DOCTYPE html>
 <html lang="de">
 	<head>
@@ -87,3 +88,63 @@
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Cyril Lavanchy">
+		<meta name="description" content="Diese Seite wurde als Übungsseite erstellt mit dem Ziel eine Basis zu erarbeiten
+		um Visualisierungen von NFL Daten darstellen zu können.">
+		<title>NFL Analytics</title>
+		<script type="text/javascript" src="/scripts/scriptfile.js"></script>
+		<link rel="shortcut icon" href="images/NFLLogo.ico" type="image/x-icon">
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
+		<script src = "d3.min.js"></script>
+		<script src="Chart.min.js"></script>
+	</head>
+	<body>
+		<h1>NFL Analytics</h1>
+		<img src="images\nfl-logo.png" alt="NFL Logo: zeigt die Buchstaben NFL, einen Football innerhalb eines rot-blauen Kreises">
+		<p>Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.</p>
+		<h2>Inhaltsübersicht:</h2>
+		<ol id = "contentlist">
+			<li></li>
+		</ol>
+		<h2>Links:</h2>
+		<ul id = "links">
+			<li><a href="https://www.nfl.com" title="NFL Homepage" target="_blank">NFL</a></li>
+		</ul>
+		<h2>1. Übersicht</h2>
+		<h2>2. Football in Kürze</h2>
+		<h2>3. Erste Visualisierung</h2>
+			<div>
+				<p id="chartTitle">Verhältnis von Lauf- zu Passspielzügen in den Jahren 2009-2017 pro Viertel</p>
+				<!-- <canvas id="InlineChart" class="ChartByQuarter" style="width: 100px; height: 50px;"></canvas> -->
+				<button id="showChart">Chart anzeigen</button>
+					<div id='chartModal' class='modal'>
+						<div class="modal-content">
+							<span class="close">&times;</span>
+							<div class='chart-container'>
+								<canvas id="Chart" class="ChartByQuarter"></canvas>
+							</div>
+						</div>
+					</div>
+			</div>
+		<button id="changeUser">Benutzer ändern</button>
+		<script>
+		 d3.select("#contentlist").selectAll("li")
+			.data(["Übersicht", "Football in Kürze", "Erste Visualisierung"])
+			.text(function(d) { return d; })
+			.enter()
+			.append("li")
+			.text(function(d) { return d; });
+		</script>
+		<script type="text/javascript">
+		</script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
+>>>>>>> before discard
