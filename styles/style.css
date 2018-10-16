@@ -33,7 +33,7 @@ body {
 #chartTitle {
 	font-size: 12px;
 }
-.InlineChart {
+#InlineChart {
 	width: 30%;
 	display: block;
 	height: auto;
