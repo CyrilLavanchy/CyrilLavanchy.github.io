@@ -30,7 +30,7 @@ body {
 	border: 1px solid black;
 	border-bottom: 1.5px solid black;
 }
-InlineChart {
+.InlineChart {
 	width: 10%;
 	height: auto;
 	border: 1px solid black;
