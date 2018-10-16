@@ -33,13 +33,6 @@ body {
 #chartTitle {
 	font-size: 12px;
 }
-#InlineChart {
-	width: 30%;
-	display: block;
-	height: auto;
-	border: 1px solid black;
-	border-bottom: 1.5px solid black;
-}
 .modal {
 	display: none;
 	position: fixed;
