@@ -36,7 +36,7 @@ var showChartBtn = document.getElementById("showChart");
 var closeaction = document.getElementsByClassName('close')[0];
 //When the user clicks on the button, open the Modal
 showChartBtn.onclick = function() {
-	modal.style.display = "block";
+	modal.style.display = "compact";
 }
 //When the user clicks on <span> (x), close the Modal
 closeaction.onclick = function() {
