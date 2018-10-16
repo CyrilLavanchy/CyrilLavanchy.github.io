@@ -23,10 +23,15 @@ li:hover {
 	color: #013369;
 }
 body {
-	width: 600px
+	width: 600px;
 	margin: 0 auto;
 	background-color: #fffbfb;
 	padding: 0 20px 20px 20px;
+	border: 1px solid black;
+	border-bottom: 1.5px solid black;
+}
+InlineChart {
+	width: 200px;
 	border: 1px solid black;
 	border-bottom: 1.5px solid black;
 }
