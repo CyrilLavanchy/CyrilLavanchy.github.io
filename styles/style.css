@@ -30,6 +30,9 @@ body {
 	border: 1px solid black;
 	border-bottom: 1.5px solid black;
 }
+#chartTitle {
+	font-size: 10px;
+}
 .InlineChart {
 	width: 30%;
 	block-size: 30%;
