@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@material/button": "^0.40.1",
+    "@material/ripple": "^0.40.1",
     "autoprefixer": "^9.2.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
