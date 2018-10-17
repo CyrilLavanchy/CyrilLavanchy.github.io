@@ -1,11 +1,10 @@
-$mdc-theme-primary: #fcb8ab;
-$mdc-theme-secondary: #feeae6;
-$mdc-theme-on-primary: #442b2d;
-$mdc-theme-on-secondary: #442b2d;
+$mdc-theme-primary: #DCD7E9;
+$mdc-theme-secondary: #281657;
+$mdc-theme-on-primary: #281657;
+$mdc-theme-on-secondary: #897BAF;
 
 @import "@material/button/mdc-button";
 
 .foo-button {
-  @include mdc-button-ink-color(teal);
   @include mdc-states(teal);
 }
