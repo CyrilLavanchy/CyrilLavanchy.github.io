@@ -26,10 +26,13 @@
     "maxEntrypointSize": 500000
   },
   "devDependencies": {
+    "@material/button": "^0.40.1",
+    "autoprefixer": "^9.2.1",
     "css-loader": "^1.0.0",
     "extract-loader": "^3.0.0",
     "file-loader": "^2.0.0",
     "node-sass": "^4.9.4",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "webpack": "^3.12.0",
     "webpack-dev-server": "^2.11.3"
