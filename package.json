@@ -4,6 +4,7 @@
   "description": "npm Packege.json",
   "main": "main.js",
   "scripts": {
+    "build": "webpack -p",
     "start": "webpack-dev-server"
   },
   "repository": {
