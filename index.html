@@ -8,6 +8,7 @@
 		um Visualisierungen von NFL Daten darstellen zu können.">
 		<title>NFL Analytics</title>
 		<link rel="stylesheet" href="bundle.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="shortcut icon" href="images/NFLLogo.ico" type="image/x-icon">
 		<link href="styles/style.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP" rel="stylesheet">
@@ -15,7 +16,29 @@
 		<script src="Chart.min.js"></script>
 	</head>
 	<body>
-		<h1>NFL Analytics</h1>
+		<header class="mdc-top-app-bar">
+  		<div class="mdc-top-app-bar__row">
+    		<section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      		<a id="menubutton" href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+      		<span class="mdc-top-app-bar__title">NFL Analytics</span>
+    		</section>
+  		</div>
+		</header>
+
+		<div id=menudisplay class="mdc-menu mdc-menu-surface" tabindex="-1">
+		  <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
+		    <li class="mdc-list-item" role="menuitem">
+		      <span class="mdc-list-item__text">Übersicht</span>
+		    </li>
+		    <li class="mdc-list-item" role="menuitem">
+		      <span class="mdc-list-item__text">"Football in Kürze"</span>
+		    </li>
+				<li class="mdc-list-item" role="menuitem">
+		      <span class="mdc-list-item__text">"Erste Visualisierung"</span>
+		    </li>
+		  </ul>
+		</div>
+
 		<img src="images\nfl-logo.png" alt="NFL Logo: zeigt die Buchstaben NFL, einen Football innerhalb eines rot-blauen Kreises">
 		<p>Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.</p>
 		<h2>Inhaltsübersicht:</h2>
@@ -45,9 +68,9 @@
 						</div>
 					</div>
 			</div>
-		<button id="changeUser" class="foo-button mdc-button mdc-button--raised mdc-button--dense">Benutzer ändern</button>
+		<!-- <button id="changeUser" class="foo-button mdc-button mdc-button--raised mdc-button--dense">Benutzer ändern</button> -->
 		<script>
-		 d3.select("#contentlist").selectAll("li")
+		 		d3.select("#contentlist").selectAll("li")
 			.data(["Übersicht", "Football in Kürze", "Erste Visualisierung"])
 			.text(function(d) { return d; })
 			.enter()

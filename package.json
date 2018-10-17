@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/CyrilLavanchy/CyrilLavanchy.github.io#readme",
   "dependencies": {
+    "@material/layout-grid": "^0.40.1",
+    "@material/menu": "^0.40.1",
     "@material/theme": "^0.40.1",
+    "@material/top-app-bar": "^0.40.1",
     "material-design-lite": "^1.3.0",
     "typescript": "^3.1.3",
     "underscore": "^1.9.1"

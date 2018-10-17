@@ -4,7 +4,17 @@ $mdc-theme-on-primary: #281657;
 $mdc-theme-on-secondary: #897BAF;
 
 @import "@material/button/mdc-button";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
 
 .foo-button {
   @include mdc-states(teal);
+}
+
+#menudisplay {
+  left: 20px;
+  top:64px;
 }
