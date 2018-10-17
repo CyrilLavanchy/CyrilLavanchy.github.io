@@ -5,10 +5,11 @@ $mdc-theme-on-secondary: #897BAF;
 
 @import "@material/button/mdc-button";
 @import "@material/layout-grid/mdc-layout-grid";
-@import "@material/top-app-bar/mdc-top-app-bar";
 @import "@material/list/mdc-list";
 @import "@material/menu-surface/mdc-menu-surface";
 @import "@material/menu/mdc-menu";
+@import "@material/toolbar/mdc-toolbar";
+@import "@material/card/mdc-card";
 
 .foo-button {
   @include mdc-states(teal);
