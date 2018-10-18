@@ -15,59 +15,75 @@
 		<script src = "d3.min.js"></script>
 		<script src="Chart.min.js"></script>
 	</head>
+
 	<body>
+<!-- Definition des Headerbereichs -->
 		<header class="mdc-toolbar">
 	  <div class="mdc-toolbar__row">
 			<section class="mdc-toolbar__section mdc-toolbar__section">
 	      <span class="mdc-toolbar__title">NFL Analytics by Cyril Lavanchy</span>
 	    </section>
 	  </div>
-	</header>
-	<div id="logocard" class="mdc-card" style="margin-left:auto;margin-right:auto;">
-		<img src="images\nfl-logo.png" alt="NFL Logo: zeigt die Buchstaben NFL, einen Football innerhalb eines rot-blauen Kreises">
-	</div>
-	<div class="mdc-layout-grid">
-		<div class="mdc-layout-grid__inner">
-			<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--align-left">
-				<div class="mdc-card">
-					<p>Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.</p>
+		</header>
+<!-- Toplevel Bild Definition -->
+		<div id="logocard" class="mdc-card" style="margin-left:auto;margin-right:auto;">
+			<img src="images\nfl-logo.png" alt="NFL Logo: zeigt die Buchstaben NFL, einen Football innerhalb eines rot-blauen Kreises">
+		</div>
+<!-- Topicslevel Definition -->
+		<div class="mdc-layout-grid">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-left">
+					<div id="topiccards" class="mdc-card">
+						<p>Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.</p>
+					</div>
 				</div>
-			</div>
-			<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--align-right">
-				<div class="mdc-card">
-					<h2>Inhaltsübersicht:</h2>
-					<ol id = "contentlist">
-						<li></li>
-					</ol>
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-center">
+					<div id="topiccards" class="mdc-card">
+						<h2>Inhaltsübersicht:</h2>
+						<ol id = "contentlist">
+							<li></li>
+						</ol>
+					</div>
+				</div>
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-right">
+					<div id="topiccards" class="mdc-card">
+						<h2>Links:</h2>
+							<ul id = "links">
+								<li><a href="https://www.nfl.com" title="NFL Homepage" target="_blank">NFL</a></li>
+							</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<h2>Links:</h2>
-		<ul id = "links">
-			<li><a href="https://www.nfl.com" title="NFL Homepage" target="_blank">NFL</a></li>
-		</ul>
-	</div>
-		<h2>1. Übersicht</h2>
-		<h2>2. Football in Kürze</h2>
-		<h2>3. Erste Visualisierung</h2>
-			<div>
-				<p id="chartTitle">Verhältnis von Lauf- zu Passspielzügen in den Jahren 2009-2017 pro Viertel</p>
-				<!-- <canvas id="InlineChart" class="ChartByQuarter" style="width: 100px; height: 50px;"></canvas> -->
-				<!-- Colored raised button -->
-				<button id="showChart" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
-  			Chart anzeigen
-				</button>
-					<div id='chartModal' class='modal'>
-						<div class="modal-content">
-							<span class="close">&times;</span>
-							<div class='chart-container'>
-								<canvas id="Chart" class="ChartByQuarter"></canvas>
-							</div>
+<!-- Chartsbibliothek -->
+		<div class="mdc-layout-grid">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell">
+					<h2>Visualisierungen</h2>
+					<div class="mdc-layout-grid__inner">
+						<div class="mdc-layout-grid__cell">
+							<p id="chartTitle">Verhältnis von Lauf- zu Passspielzügen in den Jahren 2009-2017 pro Viertel</p>
+							<!-- <canvas id="InlineChart" class="ChartByQuarter" style="width: 100px; height: 50px;"></canvas> -->
+							<!-- Colored raised button -->
+							<button id="showChart" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
+  						Chart anzeigen
+							</button>
+								<div id='chartModal' class='modal'>
+									<div class="modal-content">
+										<span class="close">&times;</span>
+										<div class='chart-container'>
+											<canvas id="Chart" class="ChartByQuarter"></canvas>
+										</div>
+									</div>
+								</div>
 						</div>
 					</div>
+				</div>
 			</div>
+		</div>
 		<!-- <button id="changeUser" class="foo-button mdc-button mdc-button--raised mdc-button--dense">Benutzer ändern</button> -->
+
+<!-- Script um das Inhaltsverzeichnis zu erstellen -->
 		<script>
 		 		d3.select("#contentlist").selectAll("li")
 			.data(["Übersicht", "Football in Kürze", "Erste Visualisierung"])
@@ -76,6 +92,8 @@
 			.append("li")
 			.text(function(d) { return d; });
 		</script>
+
+<!-- Script um den ChartByQuarter zu erstellen -->
 		<script>
 		var ctx = document.getElementsByClassName("ChartByQuarter");
 		var ChartByQuarter = new Chart(ctx, {
@@ -110,7 +128,9 @@
 			}
 		});
 		</script>
+
+<!-- Verweis auf die Scripts-Dateien -->
 		<script src="bundle.js" async></script>
-		<script src="scripts/main.js"></script>
+		<!-- <script src="scripts/main.js"></script> -->
 	</body>
 </html>
