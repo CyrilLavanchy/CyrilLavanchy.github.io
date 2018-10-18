@@ -34,15 +34,14 @@
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-left">
 					<div id="topiccards" class="mdc-card">
-						<p>Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.</p>
+						<h2>Einleitung</h2>
+						<p>Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.<br><br> Die Seite dient vor allem Übungszwecken und stellt die erste "Code"-Erfahrung meinerseits dar.</p>
 					</div>
 				</div>
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-center">
 					<div id="topiccards" class="mdc-card">
-						<h2>Inhaltsübersicht:</h2>
-						<ol id = "contentlist">
-							<li></li>
-						</ol>
+						<h2>Was ist American Football?</h2>
+						<p>tbd</p>
 					</div>
 				</div>
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-right">
@@ -62,20 +61,22 @@
 					<h2>Visualisierungen</h2>
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell">
-							<p id="chartTitle">Verhältnis von Lauf- zu Passspielzügen in den Jahren 2009-2017 pro Viertel</p>
-							<!-- <canvas id="InlineChart" class="ChartByQuarter" style="width: 100px; height: 50px;"></canvas> -->
-							<!-- Colored raised button -->
-							<button id="showChart" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
-  						Chart anzeigen
-							</button>
-								<div id='chartModal' class='modal'>
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<div class='chart-container'>
-											<canvas id="Chart" class="ChartByQuarter"></canvas>
+							<div class="mdc-card">
+								<p id="chartTitle">Lauf/Pass pro Viertel</p>
+								<!-- <canvas id="InlineChart" class="ChartByQuarter" style="width: 100px; height: 50px;"></canvas> -->
+								<!-- Colored raised button -->
+								<button id="showChart" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
+  							Chart anzeigen
+								</button>
+									<div id='chartModal' class='modal'>
+										<div class="modal-content">
+											<span class="close">&times;</span>
+											<div class='chart-container'>
+												<canvas id="Chart" class="ChartByQuarter"></canvas>
+											</div>
 										</div>
 									</div>
-								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -83,15 +84,15 @@
 		</div>
 		<!-- <button id="changeUser" class="foo-button mdc-button mdc-button--raised mdc-button--dense">Benutzer ändern</button> -->
 
-<!-- Script um das Inhaltsverzeichnis zu erstellen -->
-		<script>
+<!-- Script um das Inhaltsverzeichnis zu erstellen (aktuell nicht mehr im Gebrauch)-->
+		<!-- <script>
 		 		d3.select("#contentlist").selectAll("li")
 			.data(["Übersicht", "Football in Kürze", "Erste Visualisierung"])
 			.text(function(d) { return d; })
 			.enter()
 			.append("li")
 			.text(function(d) { return d; });
-		</script>
+		</script> -->
 
 <!-- Script um den ChartByQuarter zu erstellen -->
 		<script>

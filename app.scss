@@ -29,41 +29,11 @@ $mdc-theme-on-secondary: #897BAF;
   height: 300px;
 }
 
-html {
-	font-size: 14px;
-	font-family: 'Noto Serif JP', sans-serif;
-}
-h1 {
-	font-size: 60px;
-	text-align: center;
-	margin: 0;
-	padding: 20px 0;
-	color: #054D9D;
-	text-shadow: 3px 3px 3px black;
-}
 img {
   display: block;
   margin: 0 auto;
 }
-p, li {
-	font-size: 16px;
-	line-height: 2;
-	letter-spacing: 1px;
-}
-li:hover {
-	color: #013369;
-}
-body {
-	width: auto;
-	margin: 0 auto;
-	background-color: #fffbfb;
-	padding: 0 20px 20px 20px;
-	border: 1px solid black;
-	border-bottom: 1.5px solid black;
-}
-#chartTitle {
-	font-size: 12px;
-}
+
 .modal {
 	display: none;
 	position: fixed;

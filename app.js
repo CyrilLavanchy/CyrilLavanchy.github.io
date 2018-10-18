@@ -2,30 +2,6 @@
 import {MDCRipple} from '@material/ripple';
 const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
-// topAppBar
-import {MDCTopAppBar} from '@material/top-app-bar/index';
-
-// Instantiation
-const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-const topAppBar = new MDCTopAppBar(topAppBarElement);
-
-// Menu
-import {MDCMenu} from '@material/menu';
-
-const menu = new MDCMenu(document.querySelector('.mdc-menu'));
-menu.open = true;
-
-//click on menu
-var openmenu = document.getElementById('menudisplay');
-
-var menubtn = document.getElementById('menubutton');
-
-menubtn.addEventListener("click", function(){
-  openmenu.style.display = "block";
-})
-
-
-
 //img change
 var myImage = document.querySelector('img');
 
@@ -38,26 +14,27 @@ myImage.onclick = function () {
 	}
 }
 
-//userchange
-var UserChangeBtn = document.getElementById('changeUser');
-var myHeading = document.querySelector('h1');
+//userchange (decap)
+//var UserChangeBtn = document.getElementById('changeUser');
+//var myHeading = document.querySelector('h1');
 
-function setUserName() {
-	var myName = prompt('Gib deinen Namen ein.');
-	localStorage.setItem('name', myName);
-	myHeading.textContent = 'Willkommen zu NFL Analytics, ' + myName;
-}
+//function setUserName() {
+	//var myName = prompt('Gib deinen Namen ein.');
+	//localStorage.setItem('name', myName);
+	//myHeading.textContent = 'Willkommen zu NFL Analytics, ' + myName;
+//}
 
-if(!localStorage.getItem('name')) {
-	setUserName();
-} else {
-	var storedName = localStorage.getItem('name');
-	myHeading.textContent = 'Willkommen zu NFL Analytics, ' + storedName;
-}
+//if(!localStorage.getItem('name')) {
+	//setUserName();
+//} else {
+	//var storedName = localStorage.getItem('name');
+	//myHeading.textContent = 'Willkommen zu NFL Analytics, ' + storedName;
+//}
 
-UserChangeBtn.onclick = function() {
-	setUserName();
-}
+//UserChangeBtn.onclick = function() {
+	//setUserName();
+//}
+
 // Get the modal
 var modal = document.getElementById('chartModal');
 // Get the button that opens the Modal
