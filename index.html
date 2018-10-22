@@ -37,7 +37,7 @@
 					<div id="topiccards" class="mdc-card">
 						<div class="mdc-card__primary-action mdc-ripple-upgraded">
 							<div class="mdc-card__primary">
-								<h2 class="mdc-card__title mdy-typography--headline6">Einleitung</h2>
+								<h2 class="mdc-card__title mdc-typography--headline6">Einleitung</h2>
 							</div>
 							<div class="mdc-card__secondary mdc-typography--body2">
 								Auf dieser Seite werden die Resultate der Semesterarbeit von Cyril Lavanchy zum Thema "NFL Offensive Playcalling" gezeigt.<br><br> Die Seite dient vor allem Übungszwecken und stellt die erste "Code"-Erfahrung meinerseits dar.
@@ -50,7 +50,7 @@
 					<div id="topiccards" class="mdc-card">
 						<div class="mdc-card__primary-action mdc-ripple-upgraded">
 							<div class="mdc-card__primary">
-								<h2 class="mdc-card__title mdy-typography--headline6">Was ist American Football?</h2>
+								<h2 class="mdc-card__title mdc-typography--headline6">Was ist American Football?</h2>
 							</div>
 							<div class="mdc-card__secondary mdc-typography--body2">
 							tbd
@@ -62,7 +62,7 @@
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-right">
 					<div id="topiccards" class="mdc-card">
 						<div class="mdc-card__primary">
-							<h2 class="mdc-card__title mdy-typography--headline6">Links:</h2>
+							<h2 class="mdc-card__title mdc-typography--headline6">Links:</h2>
 						</div>
 						<div class="mdc-card__secondary mdc-typography--body2">
 							<ul id = "links">
@@ -82,17 +82,21 @@
 					<div class="mdc-layout-grid__inner">
 						<div class="mdc-layout-grid__cell">
 							<div class="mdc-card">
-								<p id="chartTitle">Lauf/Pass pro Viertel</p>
+								<div class="mdc-card__primary">
+									<h2 id="chartTitle" class="mdc-card__title mdc-typography--headline6">Lauf/Pass pro Viertel</h2>
+								</div>
 								<!-- <canvas id="InlineChart" class="ChartByQuarter" style="width: 100px; height: 50px;"></canvas> -->
 								<!-- Colored raised button -->
-								<button id="showChart" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
-  							Chart anzeigen
-								</button>
-									<div id='chartModal' class='modal'>
-										<div class="modal-content">
-											<span class="close">&times;</span>
-											<div class='chart-container'>
-												<canvas id="Chart" class="ChartByQuarter"></canvas>
+								<div class="mdc-card__secondary">
+									<button id="showChart" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
+  								Chart anzeigen
+									</button>
+										<div id='chartModal' class='modal'>
+											<div class="modal-content">
+												<span class="close">&times;</span>
+												<div class='chart-container'>
+													<canvas id="Chart" class="ChartByQuarter"></canvas>
+												</div>
 											</div>
 										</div>
 									</div>
