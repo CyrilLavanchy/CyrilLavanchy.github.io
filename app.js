@@ -35,23 +35,68 @@ myImage.onclick = function () {
 	//setUserName();
 //}
 
+// Modal for Chart1
 // Get the modal
-var modal = document.getElementById('chartModal');
+var modal1 = document.getElementById('chartModal1');
 // Get the button that opens the Modal
-var showChartBtn = document.getElementById("showChart");
+var showChartBtn1 = document.getElementById("showChart1");
 // Get the <span> element that closes the Modal
-var closeaction = document.getElementsByClassName('close')[0];
+var closeaction1 = document.getElementsByClassName('close1')[0];
 //When the user clicks on the button, open the Modal
-showChartBtn.onclick = function() {
-	modal.style.display = "block";
+showChartBtn1.onclick = function() {
+	modal1.style.display = "block";
 }
 //When the user clicks on <span> (x), close the Modal
-closeaction.onclick = function() {
-	modal.style.display = "none";
+closeaction1.onclick = function() {
+	modal1.style.display = "none";
 }
 //When the user clicks anywhere outside of the modal, close it
-window.onclick= function(event) {
-	if (event.target == modal) {
-		modal.style.display = "none";
+window.onclick = function(event) {
+	if (event.target == modal1) {
+		modal1.style.display = "none";
+	}
+}
+
+// Modal for Chart2
+// Get the modal
+var modal2 = document.getElementById('chartModal2');
+// Get the button that opens the Modal
+var showChartBtn2 = document.getElementById("showChart2");
+// Get the <span> element that closes the Modal
+var closeaction2 = document.getElementsByClassName('close2')[0];
+//When the user clicks on the button, open the Modal
+showChartBtn2.onclick = function() {
+	modal2.style.display = "block";
+}
+//When the user clicks on <span> (x), close the Modal
+closeaction2.onclick = function() {
+	modal2.style.display = "none";
+}
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal2) {
+		modal2.style.display = "none";
+	}
+}
+
+// Modal for Chart3
+// Get the modal
+var modal3 = document.getElementById('chartModal3');
+// Get the button that opens the Modal
+var showChartBtn3 = document.getElementById("showChart3");
+// Get the <span> element that closes the Modal
+var closeaction3 = document.getElementsByClassName('close3')[0];
+//When the user clicks on the button, open the Modal
+showChartBtn3.onclick = function() {
+	modal3.style.display = "block";
+}
+//When the user clicks on <span> (x), close the Modal
+closeaction3.onclick = function() {
+	modal3.style.display = "none";
+}
+//When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == modal3) {
+		modal3.style.display = "none";
 	}
 }

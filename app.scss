@@ -30,8 +30,8 @@ $mdc-theme-on-secondary: #897BAF;
 }
 
 #VisCards {
-  height: 200px;
-  width: 250px;
+  height: 300px;
+  width: 400px;
 }
 img {
   display: block;
@@ -51,12 +51,18 @@ img {
 	background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
-	background-color: #d3e6fb;
-	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
+	background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
+
+.modal-container {
+
+}
+
+
 .close {
 	color: #aaa;
 	float: right;
