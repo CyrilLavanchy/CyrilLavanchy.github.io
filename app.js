@@ -51,11 +51,11 @@ closeaction1.onclick = function() {
 	modal1.style.display = "none";
 }
 //When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
 	if (event.target == modal1) {
 		modal1.style.display = "none";
 	}
-}
+});
 
 // Modal for Chart2
 // Get the modal
@@ -73,11 +73,11 @@ closeaction2.onclick = function() {
 	modal2.style.display = "none";
 }
 //When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
 	if (event.target == modal2) {
 		modal2.style.display = "none";
 	}
-}
+});
 
 // Modal for Chart3
 // Get the modal
@@ -95,8 +95,8 @@ closeaction3.onclick = function() {
 	modal3.style.display = "none";
 }
 //When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
 	if (event.target == modal3) {
 		modal3.style.display = "none";
 	}
-}
+});
