@@ -100,3 +100,25 @@ window.addEventListener("click", function(event) {
 		modal3.style.display = "none";
 	}
 });
+
+// Modal for Chart4
+// Get the modal
+var modal4 = document.getElementById('chartModal4');
+// Get the button that opens the Modal
+var showChartBtn4 = document.getElementById("showChart4");
+// Get the <span> element that closes the Modal
+var closeaction4 = document.getElementsByClassName('close4')[0];
+//When the user clicks on the button, open the Modal
+showChartBtn4.onclick = function() {
+	modal4.style.display = "block";
+}
+//When the user clicks on <span> (x), close the Modal
+closeaction4.onclick = function() {
+	modal4.style.display = "none";
+}
+//When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", function(event) {
+	if (event.target == modal4) {
+		modal4.style.display = "none";
+	}
+});
