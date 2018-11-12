@@ -1,18 +1,14 @@
-// Ripple for Button
-import {MDCRipple} from '@material/ripple';
-const ripple = new MDCRipple(document.querySelector('.foo-button'));
-
 //img change
-var myImage = document.querySelector('img');
+const myImage = document.querySelector('img');
 
 myImage.onclick = function () {
-	var mySrc = myImage.getAttribute('src');
+	const mySrc = myImage.getAttribute('src');
 	if(mySrc === 'images/nfl-logo.png') {
 		myImage.setAttribute ('src','images/hit.jpg');
 	} else {
 		myImage.setAttribute ('src','images/nfl-logo.png');
 	}
-}
+};
 
 //userchange (decap)
 //var UserChangeBtn = document.getElementById('changeUser');
@@ -45,11 +41,11 @@ var closeaction1 = document.getElementsByClassName('close1')[0];
 //When the user clicks on the button, open the Modal
 showChartBtn1.onclick = function() {
 	modal1.style.display = "block";
-}
+};
 //When the user clicks on <span> (x), close the Modal
 closeaction1.onclick = function() {
 	modal1.style.display = "none";
-}
+};
 //When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(event) {
 	if (event.target == modal1) {
@@ -67,11 +63,11 @@ var closeaction2 = document.getElementsByClassName('close2')[0];
 //When the user clicks on the button, open the Modal
 showChartBtn2.onclick = function() {
 	modal2.style.display = "block";
-}
+};
 //When the user clicks on <span> (x), close the Modal
 closeaction2.onclick = function() {
 	modal2.style.display = "none";
-}
+};
 //When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(event) {
 	if (event.target == modal2) {
@@ -93,7 +89,7 @@ showChartBtn3.onclick = function() {
 //When the user clicks on <span> (x), close the Modal
 closeaction3.onclick = function() {
 	modal3.style.display = "none";
-}
+};
 //When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(event) {
 	if (event.target == modal3) {
@@ -111,14 +107,36 @@ var closeaction4 = document.getElementsByClassName('close4')[0];
 //When the user clicks on the button, open the Modal
 showChartBtn4.onclick = function() {
 	modal4.style.display = "block";
-}
+};
 //When the user clicks on <span> (x), close the Modal
 closeaction4.onclick = function() {
 	modal4.style.display = "none";
-}
+};
 //When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(event) {
 	if (event.target == modal4) {
 		modal4.style.display = "none";
+	}
+});
+
+// Modal for Chart5
+// Get the modal
+var modal5 = document.getElementById('chartModal5');
+// Get the button that opens the Modal
+var showChartBtn5 = document.getElementById("showChart5");
+// Get the <span> element that closes the Modal
+var closeaction5 = document.getElementsByClassName('close5')[0];
+//When the user clicks on the button, open the Modal
+showChartBtn5.onclick = function() {
+	modal5.style.display = "block";
+};
+//When the user clicks on <span> (x), close the Modal
+closeaction5.onclick = function() {
+	modal5.style.display = "none";
+};
+//When the user clicks anywhere outside of the modal, close it
+window.addEventListener("click", function(event) {
+	if (event.target == modal5) {
+		modal5.style.display = "none";
 	}
 });

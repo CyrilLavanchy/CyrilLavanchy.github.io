@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
-		<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<!--		<meta name ="viewport" content="width=device-width, initial-scale=1.0"> -->
 		<meta name="author" content="Cyril Lavanchy">
 		<meta name="description" content="Diese Seite wurde als Übungsseite erstellt mit dem Ziel eine Basis zu erarbeiten
 		um Visualisierungen von NFL Daten darstellen zu können.">
@@ -34,7 +35,7 @@
 		<div class="mdc-layout-grid">
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-left">
-					<div id="topiccards" class="mdc-card">
+					<div class="mdc-card topiccards">
 						<div class="mdc-card__primary-action mdc-ripple-upgraded">
 							<div class="mdc-card__primary">
 								<h2 class="mdc-card__title mdc-typography--headline6">Einleitung</h2>
@@ -47,20 +48,20 @@
 				</div>
 
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-center">
-					<div id="topiccards" class="mdc-card">
+					<div class="mdc-card topiccards">
 						<div class="mdc-card__primary-action mdc-ripple-upgraded">
 							<div class="mdc-card__primary">
-								<h2 class="mdc-card__title mdc-typography--headline6">Was ist American Football?</h2>
+								<h2 class="mdc-card__title mdc-typography--headline6">American Football in Kürze</h2>
 							</div>
 							<div class="mdc-card__secondary mdc-typography--body2" style="overflow:auto;">
-							tbd
+							American Football gehört zu den beliebtesten Sportarten in der USA. Der Final der NFL (National Football League), der Superbowl, gehört zu den grössten Einzelsportveranstaltungen weltweit und wird von Millionen Menschen in der ganzen Welt live mitverfolgt. <br><br>Ziel des Spieles ist es den Spielball in die gegnerischen Endzone zu laufen oder zu passen. Hierfür hat das offensive Team jeweils vier Versüche (Downs) zur Verfügung um 10 yards zu überbrücken. Falls dies nicht erreicht wird, geht das Angriffsrecht an das gegnerische Team über. Pro Spielzug ist jeweils ein Vorwärtspass erlaubt. <br>Spielzüge die einen Vorwärtspass enthalten werden als Passspielzüge (Pass) bezeichnet. Wenn das offensive Team keinen Pass wirft und den Ball per Lauf das Spielfeld entlang bewegt, wird der Spielzug als Laufspielzug (Run) definiert. Pro Manschaft stehen jeweils elf Spieler auf dem Feld. Aufgrund der Spezialisierung der einzelnen Spieler (z.B.: Offense, Defence, Punt, Kickoff, sonstige Special Teams) besteht das Kader eines NFL-Teams aktuell aus bis zu 46 Spielern.
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--align-right">
-					<div id="topiccards" class="mdc-card">
+					<div class="mdc-card topiccards">
 						<div class="mdc-card__primary">
 							<h2 class="mdc-card__title mdc-typography--headline6">Links:</h2>
 						</div>
@@ -75,7 +76,7 @@
 		</div>
 
 <!-- Chartsbibliothek -->
-		<div class="mdc-layout-grid">
+		<div class="mdc-layout-grid Chartsbibliothek-title">
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell">
 					<h2>Visualisierungen</h2>
@@ -86,9 +87,9 @@
 			<div class="mdc-layout-grid__inner">
  <!-- Erste Visualisierung -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
-					<div id="VisCards" class="mdc-card centerbutton">
+					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
-							<h3 id="chartTitle" class="mdc-card__title mdc-typography--headline6 centertext" >Lauf/Pass pro Viertel</h3>
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext" >Lauf/Pass pro Viertel</h3>
 						</div>
 						<div class="mdc-card__secondary">
 							<img src="images\Grafik1.svg">
@@ -110,14 +111,15 @@
 				</div>
 <!-- Zweite Visualisierung -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
-					<div id="VisCards" class="mdc-card centerbutton">
+					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
-							<h3 id="chartTitle" class="mdc-card__title mdc-typography--headline6 centertext">L/P Viertel Power BI</h3>
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext">L/P Viertel
+								Power BI</h3>
 						</div>
 						<div class="mdc-card__secondary">
 							<img src="images\LaufPassViertelPBI.svg">
 						</div>
-						<div class="mdc-card__actions">
+						<div class="mdc-card__actions ">
 							<button id="showChart2" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
 								Chart anzeigen
 							</button>
@@ -125,18 +127,20 @@
 								<div class="modal-content">
 									<span class="close close2">&times;</span>
 									<div class='chart-container iframe-container'>
-										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzU1ZDFhOGEtZWI0NS00MGZmLTk2NmItMGQ2YTFlZDc1MDllIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9" allowFullScreen="true"></iframe>
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzU1ZDFhOGEtZWI0NS00MGZmLTk2NmItMGQ2YTFlZDc1MDllIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9"
+												allowFullScreen></iframe>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-<!-- Dritte Visualisierung -->
+				<!-- Dritte Visualisierung -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
-					<div id="VisCards" class="mdc-card centerbutton">
+					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
-							<h3 id="chartTitle" class="mdc-card__title mdc-typography--headline6 centertext">Passanteil über die Zeit</h3>
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext">Passanteil
+								über die Zeit</h3>
 						</div>
 						<div class="mdc-card__secondary">
 							<img src="images\AnteilPassZeit.svg">
@@ -149,22 +153,24 @@
 								<div class="modal-content">
 									<span class="close close3">&times;</span>
 									<div class='chart-container iframe-container'>
-										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiZjkzZmEyMWUtODhkOC00MmRhLTlkODctZmFjMjEyMDg2OWRiIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9" allowFullScreen="true"></iframe>
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiZjkzZmEyMWUtODhkOC00MmRhLTlkODctZmFjMjEyMDg2OWRiIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9"
+												allowFullScreen></iframe>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-<!-- Vierte Visualisierung -->
+				<!-- Vierte Visualisierung -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
-					<div id="VisCards" class="mdc-card centerbutton">
+					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
-							<h3 id="chartTitle" class="mdc-card__title mdc-typography--headline6 centertext">Passanteil bezüglich Feldposition</h3>
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext">Passanteil bezüglich
+								Feldposition</h3>
 						</div>
-					<div class="mdc-card__secondary">
-						<img src="images\AnteilPassDistanz.svg">
-					</div>
+						<div class="mdc-card__secondary">
+							<img src="images\AnteilPassDistanz.svg">
+						</div>
 						<div class="mdc-card__actions">
 							<button id="showChart4" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
 								Chart anzeigen
@@ -173,7 +179,32 @@
 								<div class="modal-content">
 									<span class="close close4">&times;</span>
 									<div class='chart-container iframe-container'>
-										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiNmUzNDIyZjMtNTI2Zi00YWQ1LTkzMzktYjM4MmZhZmMxMzdhIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9" allowFullScreen="true"></iframe>
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiNmUzNDIyZjMtNTI2Zi00YWQ1LTkzMzktYjM4MmZhZmMxMzdhIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9"
+												allowFullScreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Fünfte Visualisierung -->
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+					<div class="mdc-card centerbutton VisCards">
+						<div class="mdc-card__primary">
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext chartTitle">NFL Stadien</h3>
+						</div>
+					<div class="mdc-card__secondary">
+						<img src="images\StadionkapNFL.svg">
+					</div>
+						<div class="mdc-card__actions">
+							<button id="showChart5" class="foo-button mdc-button mdc-button--raised mdc-button--dense">
+								Chart anzeigen
+							</button>
+							<div id='chartModal5' class='modal'>
+								<div class="modal-content">
+									<span class="close close5">&times;</span>
+									<div class='chart-container iframe-container'>
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiOGVkNDgwMzUtMjg1Ni00ODNhLWE0ZmYtNzg2OWY0OTg5YjFkIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9" allowFullScreen></iframe>
 									</div>
 								</div>
 							</div>
@@ -197,8 +228,8 @@
 
 <!-- Script um den ChartByQuarter zu erstellen -->
 		<script>
-		var ctx = document.getElementsByClassName("ChartByQuarter");
-		var ChartByQuarter = new Chart(ctx, {
+		const ctx = document.getElementsByClassName("ChartByQuarter");
+		const ChartByQuarter = new Chart(ctx, {
 			type: 'bar',
 			data: {
 				labels: ['1.Viertel', '2.Viertel', '3.Viertel', '4.Viertel', 'Zusatzviertel'],

@@ -3,13 +3,13 @@ $mdc-theme-secondary: #281657;
 $mdc-theme-on-primary: #281657;
 $mdc-theme-on-secondary: #897BAF;
 
-@import "@material/button/mdc-button";
-@import "@material/layout-grid/mdc-layout-grid";
-@import "@material/list/mdc-list";
-@import "@material/menu-surface/mdc-menu-surface";
-@import "@material/menu/mdc-menu";
-@import "@material/toolbar/mdc-toolbar";
-@import "@material/card/mdc-card";
+@import "node_modules/@material/button/mdc-button";
+@import "node_modules/@material/layout-grid/mdc-layout-grid";
+@import "node_modules/@material/list/mdc-list";
+@import "node_modules/@material/menu-surface/mdc-menu-surface";
+@import "node_modules/@material/menu/mdc-menu";
+@import "node_modules/@material/toolbar/mdc-toolbar";
+@import "node_modules/@material/card/mdc-card";
 
 .foo-button {
   @include mdc-states(teal);
@@ -27,11 +27,12 @@ $mdc-theme-on-secondary: #897BAF;
 
 }
 
-#topiccards {
+.topiccards {
   height: 200px;
+  padding: 5px;
 }
 
-#VisCards {
+.VisCards {
   height: inherit;
   width: auto;
   min-height: 100%;
@@ -41,18 +42,37 @@ img {
   margin: 0 auto;
 }
 
-.modal {
-	display: none;
-	position: fixed;
-	z-index: 999;
-	top: 50%;
-	left: 50%;
-  transform: translate(-50%,-50%);
-	width: 100%;
-	height: auto;
-	overflow:  auto;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4);
+//Modal when in landscape mode//
+@media screen and (orientation:landscape) {
+  .modal {
+  	display: none;
+  	position: fixed;
+  	z-index: 999;
+  	top: 50%;
+  	left: 50%;
+    transform: translate(-50%,-50%);
+  	width: 100vw;
+  	height: auto;
+  	overflow:  auto;
+  	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0,0.4);
+  }
+}
+//Modal when in portrait mode//
+@media screen and (orientation:portrait) {
+  .modal {
+  	display: none;
+  	position: fixed;
+  	z-index: 999;
+  	top: 50%;
+  	left: 50%;
+    transform: translate(-50%,-50%);
+  	width: 100%;
+  	height: 100%;
+  	overflow:  auto;
+  	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0,0.4);
+  }
 }
 
 .modal-content {
@@ -116,4 +136,8 @@ img {
 /* 4x3 Aspect Ratio */
 .iframe-container-4x3 {
   padding-top: 75%;
+}
+
+.Chartsbibliothek-title {
+  padding-bottom: 0;
 }
