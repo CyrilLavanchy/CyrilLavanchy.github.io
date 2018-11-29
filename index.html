@@ -81,63 +81,13 @@
 		<div class="mdc-layout-grid Chartsbibliothek-title">
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell">
-					<h2>Visualisierungen</h2>
+					<h2>CAS Data Visualization HS18/19</h2>
 				</div>
 			</div>
 		</div>
 		<div class="mdc-layout-grid">
 			<div class="mdc-layout-grid__inner">
- <!-- Erste Visualisierung -->
-				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
-					<div class="mdc-card centerbutton VisCards">
-						<div class="mdc-card__primary">
-							<h3 class="mdc-card__title mdc-typography--headline6 centertext" >Lauf/Pass pro Viertel</h3>
-						</div>
-						<div class="mdc-card__secondary">
-							<img src="images\Grafik1.svg">
-						</div>
-						<div class="mdc-card__actions">
-							<button id="showChart1" class="foo-button mdc-button mdc-button--raised mdc-button--dense showChart">
-								Chart anzeigen
-							</button>
-							<div id='chartModal1' class='modal chartModal'>
-								<div class="modal-content">
-									<span class="close close1">&times;</span>
-									<div class='chart-container'>
-										<canvas id="Chart" class="ChartByQuarter"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-<!-- Zweite Visualisierung -->
-				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
-					<div class="mdc-card centerbutton VisCards">
-						<div class="mdc-card__primary">
-							<h3 class="mdc-card__title mdc-typography--headline6 centertext">L/P Viertel
-								Power BI</h3>
-						</div>
-						<div class="mdc-card__secondary">
-							<img src="images\LaufPassViertelPBI.svg">
-						</div>
-						<div class="mdc-card__actions ">
-							<button id="showChart2" class="foo-button mdc-button mdc-button--raised mdc-button--dense showChart">
-								Chart anzeigen
-							</button>
-							<div id='chartModal2' class='modal chartModal'>
-								<div class="modal-content">
-									<span class="close close2">&times;</span>
-									<div class='chart-container iframe-container'>
-										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzU1ZDFhOGEtZWI0NS00MGZmLTk2NmItMGQ2YTFlZDc1MDllIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9"
-												allowFullScreen></iframe>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Dritte Visualisierung -->
+<!-- Passanteil über die Zeit -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
 					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
@@ -163,7 +113,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Vierte Visualisierung -->
+<!-- Passanteil bezüglich Feldposition -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
 					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
@@ -189,15 +139,77 @@
 						</div>
 					</div>
 				</div>
+<!-- Ende der Visualisierung Cards -->
+			</div>
+		</div>
+		<div class="mdc-layout-grid Chartsbibliothek-title">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell">
+					<h2>Übungsvisualisierungen</h2>
+				</div>
+			</div>
+		</div>
+		<div class="mdc-layout-grid">
+			<div class="mdc-layout-grid__inner">
+				<!-- Erste Visualisierung -->
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+					<div class="mdc-card centerbutton VisCards">
+						<div class="mdc-card__primary">
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext" >Lauf/Pass pro Viertel</h3>
+						</div>
+						<div class="mdc-card__secondary">
+							<img src="images\Grafik1.svg">
+						</div>
+						<div class="mdc-card__actions">
+							<button id="showChart1" class="foo-button mdc-button mdc-button--raised mdc-button--dense showChart">
+								Chart anzeigen
+							</button>
+							<div id='chartModal1' class='modal chartModal'>
+								<div class="modal-content">
+									<span class="close close1">&times;</span>
+									<div class='chart-container'>
+										<canvas id="Chart" class="ChartByQuarter"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Zweite Visualisierung -->
+				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+					<div class="mdc-card centerbutton VisCards">
+						<div class="mdc-card__primary">
+							<h3 class="mdc-card__title mdc-typography--headline6 centertext">L/P Viertel
+								Power BI</h3>
+						</div>
+						<div class="mdc-card__secondary">
+							<img src="images\LaufPassViertelPBI.svg">
+						</div>
+						<div class="mdc-card__actions ">
+							<button id="showChart2" class="foo-button mdc-button mdc-button--raised mdc-button--dense showChart">
+								Chart anzeigen
+							</button>
+							<div id='chartModal2' class='modal chartModal'>
+								<div class="modal-content">
+									<span class="close close2">&times;</span>
+									<div class='chart-container iframe-container'>
+										<iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzU1ZDFhOGEtZWI0NS00MGZmLTk2NmItMGQ2YTFlZDc1MDllIiwidCI6IjI2ZGFjZDU4LTc1YWMtNDlkNC05ZjZkLTgzNjBjMjc2NTgxZSIsImMiOjh9"
+												allowFullScreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!-- Fünfte Visualisierung -->
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
 					<div class="mdc-card centerbutton VisCards">
 						<div class="mdc-card__primary">
 							<h3 class="mdc-card__title mdc-typography--headline6 centertext chartTitle">NFL Stadien</h3>
 						</div>
-					<div class="mdc-card__secondary">
-						<img src="images\StadionkapNFL.svg">
-					</div>
+						<div class="mdc-card__secondary">
+							<img src="images\StadionkapNFL.svg">
+						</div>
 						<div class="mdc-card__actions">
 							<button id="showChart5" class="foo-button mdc-button mdc-button--raised mdc-button--dense showChart">
 								Chart anzeigen
@@ -213,9 +225,10 @@
 						</div>
 					</div>
 				</div>
-<!-- Ende der Visualisierung Cards -->
+				<!-- Ende der Visualisierung Cards -->
 			</div>
 		</div>
+
 <!-- Ende Chartsbibliothek -->
 
 <!-- Script um das Inhaltsverzeichnis zu erstellen (aktuell nicht mehr im Gebrauch)-->
